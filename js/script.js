@@ -14,6 +14,12 @@ var app = new Vue({
       "img/image3.jpg",
       "img/image4.jpg",
     ],
+    dotNav: [
+      "<i class='fas fa-circle'></i>",
+      "<i class='fas fa-circle'></i>",
+      "<i class='fas fa-circle'></i>",
+      "<i class='fas fa-circle'></i>",
+    ],
   },
   methods: {
     nextFunction: function () {
