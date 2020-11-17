@@ -14,12 +14,7 @@ var app = new Vue({
       "img/image3.jpg",
       "img/image4.jpg",
     ],
-    dotNav: [
-      "<i class='fas fa-circle'></i>",
-      "<i class='fas fa-circle'></i>",
-      "<i class='fas fa-circle'></i>",
-      "<i class='fas fa-circle'></i>",
-    ],
+    dotIndex: 0,
   },
   methods: {
     nextFunction: function () {
@@ -32,6 +27,13 @@ var app = new Vue({
       this.imgIndex--;
       if (this.imgIndex < 0) {
         this.imgIndex = this.images.length - 1;
+      }
+    },
+    dotNavfunction: function () {
+      if (this.classi === "") {
+        this.classi = "active";
+      } else {
+        this.classi = "";
       }
     },
   },
