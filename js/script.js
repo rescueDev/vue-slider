@@ -14,7 +14,7 @@ var app = new Vue({
       "img/image3.jpg",
       "img/image4.jpg",
     ],
-    dotIndex: 0,
+    classe: "notactive",
   },
   methods: {
     nextFunction: function () {
@@ -30,10 +30,10 @@ var app = new Vue({
       }
     },
     dotNavfunction: function () {
-      if (this.classi === "") {
-        this.classi = "active";
+      if (this.classe === "active") {
+        this.classe = "notactive";
       } else {
-        this.classi = "";
+        this.classe = "active";
       }
     },
   },

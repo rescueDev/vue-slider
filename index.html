@@ -26,7 +26,12 @@
           <i @click="nextFunction" class="fas fa-angle-right"></i>
         </div>
         <div class="nav">
-          <i v-for="dot in images" class="fas fa-circle"></i>
+          <i
+            v-for="(dot, index) in images"
+            class="fas fa-circle"
+            @click="dotNavfunction"
+            :class="classe"
+          ></i>
         </div>
       </div>
     </div>
