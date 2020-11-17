@@ -28,9 +28,10 @@
         <div class="nav">
           <i
             v-for="(dot, index) in images"
+            :key="dot.id"
             class="fas fa-circle"
-            @click="dotNavfunction"
-            :class="classe"
+            :class="[('fa fa-circle', index) === imgIndex ? 'active' : null]"
+            @click="dotNavfunction(index)"
           ></i>
         </div>
       </div>

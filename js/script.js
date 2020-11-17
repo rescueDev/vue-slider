@@ -14,7 +14,8 @@ var app = new Vue({
       "img/image3.jpg",
       "img/image4.jpg",
     ],
-    classe: "notactive",
+
+    classe: "active",
   },
   methods: {
     nextFunction: function () {
@@ -29,12 +30,10 @@ var app = new Vue({
         this.imgIndex = this.images.length - 1;
       }
     },
-    dotNavfunction: function () {
-      if (this.classe === "active") {
-        this.classe = "notactive";
-      } else {
-        this.classe = "active";
-      }
+    // facciamo si che sia evidenziato solo il pallino relativo all’img in corso;
+
+    dotNavfunction: function (index) {
+      this.imgIndex = index;
     },
   },
 });
